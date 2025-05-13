@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/fontawesome.min.css" integrity="sha512-v8QQ0YQ3H4K6Ic3PJkym91KoeNT5S3PnDKvqnwqFD1oiqIl653crGZplPdU5KKtHjO0QKcQ2aUlQZYjHczkmGw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HikMah</title>
+</head>
+<body>
+    <div class="wrapper">
+        <section class="form signup">
+          <header>Realtime Chat App</header>
+          <form action="#" method="POST" enctype="multipart/form-data" autocomplete="off">
+            <div class="error-text">This is an Error</div>
+            <div class="name-details">
+              <div class="field input">
+                <label>First Name</label>
+                <input type="text" name="fname" placeholder="First name" required>
+              </div>
+              <div class="field input">
+                <label>Last Name</label>
+                <input type="text" name="lname" placeholder="Last name" required>
+              </div>
+            </div>
+            <div class="field input">
+              <label>Email Address</label>
+              <input type="text" name="email" placeholder="Enter your email" required>
+            </div>
+            <div class="field input">
+              <label>Password</label>
+              <input type="password" name="password" placeholder="Enter new password" required>
+              <i class="fas fa-eye"></i>
+            </div>
+            <div class="field image">
+              <label>Select Image</label>
+              <input type="file" name="image" accept="image/x-png,image/gif,image/jpeg,image/jpg" required>
+            </div>
+            <div class="field button">
+              <input type="submit" name="submit" value="Continue to Chat">
+            </div>
+          </form>
+          <div class="link">Already signed up? <a href="login.php">Login now</a></div>
+        </section>
+      </div>
+</body>
+</html>
