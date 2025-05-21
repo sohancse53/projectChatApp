@@ -9,6 +9,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
 
 </head>
+<?php
+
+session_start();
+if(isset($_SESSION['unique_id'])){
+    header("loacation:users.php");
+}
+
+?>
+
+    
 <?php include_once "header.php"; ?>
 <body>
     <div class="wrapper">
