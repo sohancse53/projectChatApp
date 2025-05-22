@@ -8,12 +8,12 @@ form.onsubmit =(e)=> {
 }
 
 continueBtn.onclick =()=> {
-    let Xhr =new XMLHttpRequest();
-    Xhr.open("POST","php/login.php", true);
-    Xhr.onload =() =>{
-        if(Xhr.readyState === XMLHttpRequest.DONE){
-            if(Xhr.status === 200){
-                let data =Xhr.response;
+    let xhr =new XMLHttpRequest();
+    xhr.open("POST","php/login.php", true);
+    xhr.onload =() =>{
+        if(xhr.readyState === XMLHttpRequest.DONE){
+            if(xhr.status === 200){
+                let data =xhr.response;
                 if(data === "success")
                 {
                   location.href ="users.php";
@@ -28,5 +28,5 @@ continueBtn.onclick =()=> {
         }
     }
     let formData = new FormData(form);
-    Xhr.send(formData);
+    xhr.send(formData);
 }
