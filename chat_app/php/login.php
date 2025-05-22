@@ -8,7 +8,7 @@ $password = mysqli_real_escape_string($conn, $_POST['password']);
 
 if (!empty($email) && !empty($password)) {
 
-    $sql = mysqli_query($conn, "SELECT * FORM users WHERE email = '{$email}'");  // ← typo kept
+    $sql = mysqli_query($conn, "SELECT * FROM users WHERE email = '{$email}'");
 
     if (mysqli_num_rows($sql) > 0) {
 
@@ -19,9 +19,10 @@ if (!empty($email) && !empty($password)) {
         if ($user_pass === $enc_pass) {
 
             $status = "Online";
+            //  Correct way to use the variable:  Remove the single quotes around $unique_id
             $sql2 = mysqli_query(
                 $conn,
-                "UPDATE users SET status = '{$status}' WHERE unique_id = {$row['$unique_id']}"
+                "UPDATE users SET status = '{$status}' WHERE unique_id = {$row['unique_id']}"
             );
 
             if ($sql2) {
