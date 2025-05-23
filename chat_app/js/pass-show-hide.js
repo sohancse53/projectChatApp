@@ -10,7 +10,7 @@ toggleIcon.onclick = ()=>{
     }
     else
     {
-        pswrdField.type=="password";
+        pswrdField.type ="password";
         toggleIcon.classList.remove("active");
     }
 }
