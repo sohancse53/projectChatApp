@@ -2,7 +2,7 @@
 <body>
     <div class="wrapper">
         <section class="form login">
-            <header >শারিয়াহ  অ্যাপ </header>
+            <header >Omegle Chat</header>
             <form action="#" method="POST" enctype="multipart/form-data"
             autocomplete="off">
             <div class="error-text"></div>
