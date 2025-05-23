@@ -38,8 +38,8 @@ else {
         </header>
 
         <div class="search">
-            <span class="text">Select a user to start chat</span>
-            <input type="text" placeholder="Enter name to search ...">
+            <span class="text">Search User</span>
+            <input type="text" placeholder="Enter name.." class="search-box">
             <button><i class="fas fa-search"></i></button>
         </div>
         <div class="users-list">

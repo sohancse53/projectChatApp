@@ -2,7 +2,7 @@
 <body>
     <div class="wrapper">
         <section class="form login">
-            <header>Chat App</header>
+            <header >শারিয়াহ  অ্যাপ </header>
             <form action="#" method="POST" enctype="multipart/form-data"
             autocomplete="off">
             <div class="error-text"></div>
@@ -22,7 +22,7 @@
                        <div class="field button">
                         <input type="submit" name="submit" value="Continue to Chat" required>
                 </div>
-                <div class="link">Not yet signed up? <a href="index.php">Signup now</a></div>
+                <div class="link"> signed up? <a href="index.php">Signup now</a></div>
         </form>
         </section>
     </div>
