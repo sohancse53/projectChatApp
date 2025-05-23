@@ -3,10 +3,8 @@
     <div class="wrapper">
         <section class="form login">
             <header>Chat App</header>
-            
-            <form action="#" method="POST" enctype="multipart/form-data" autocomplete="off">
-
-
+            <form action="#" method="POST" enctype="multipart/form-data"
+            autocomplete="off">
             <div class="error-text"></div>
             
             <div class="field input">
@@ -28,4 +26,7 @@
         </form>
         </section>
     </div>
+    <script type="text/javascript" src="js/pass-show-hide.js"></script>
+    <script type="text/javascript" src="js/login.js"></script>
 </body>
+</html>
