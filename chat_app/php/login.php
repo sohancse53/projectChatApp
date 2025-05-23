@@ -19,8 +19,7 @@ if (!empty($email) && !empty($password)) {
         if ($user_pass === $enc_pass) {
 
             $status = "Online";
-            //  Correct way to use the variable:  Remove the single quotes around $unique_id
-            $sql2 = mysqli_query(
+                 $sql2 = mysqli_query(
                 $conn,
                 "UPDATE users SET status = '{$status}' WHERE unique_id = {$row['unique_id']}"
             );

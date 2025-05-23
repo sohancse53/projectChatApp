@@ -1,6 +1,6 @@
-const form = document.querySelector(".typinh-area"),
+const form = document.querySelector(".typing-area"),
 incoming_id=form.querySelector(".incoming_id").value,
-inputField = form.querySelector(".input_field"),
+inputField = form.querySelector(".input-field"),
 sendBtn=form.querySelector("button"),
 chatBox=document.querySelector(".chat-box");
 
@@ -34,7 +34,7 @@ sendBtn.onclick = ()=>{
             }
         }
     }
-    let formData = new formData(form);
+    let formData = new FormData(form);
     xhr.send(formData);
 }
 
@@ -61,8 +61,8 @@ xhr.onload= () =>{
         }
     }
 }
-xhr.setRequestHeader("Content-type","application/x-www-from-urlencoded");
-xhr.send("incoming_id"+incoming_id);
+xhr.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+xhr.send("incoming_id="+incoming_id);
 },500);
 
 
